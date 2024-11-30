@@ -19,7 +19,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_NO,          KC_Q,           KC_W,           KC_F,           KC_P,           KC_B,           KC_NO,                                          KC_NO,          KC_J,           KC_L,           KC_U,           KC_Y,           KC_MEH,         KC_NO,          
     KC_NO,          MT(MOD_LCTL, KC_A),MT(MOD_LALT, KC_R),MT(MOD_LGUI, KC_S),MT(MOD_LSFT, KC_T),KC_G,           KC_NO,                                                                          KC_NO,          KC_M,           MT(MOD_RSFT, KC_N),MT(MOD_RGUI, KC_E),MT(MOD_RALT, KC_I),MT(MOD_RCTL, KC_O),KC_NO,          
     KC_NO,          KC_Z,           KC_X,           KC_C,           KC_D,           KC_V,                                           KC_K,           KC_H,           KC_COMMA,       KC_DOT,         KC_ENTER,       KC_NO,          
-    KC_NO,          KC_CAPS,        LT(3,KC_LEFT),  LT(1,KC_RIGHT), KC_SPACE,       KC_ESCAPE,                                                                                                      KC_TAB,         MT(MOD_RSFT, KC_BSPC),LT(2,KC_UP),    LT(4,KC_DOWN),  KC_HYPR,        KC_NO,          
+    KC_NO,          KC_CAPS,        LT(3,KC_LEFT),  LT(1,KC_RIGHT), KC_SPACE,       KC_ESCAPE,                                                                                                      KC_TAB,         KC_BSPC,        LT(2,KC_UP),    LT(4,KC_DOWN),  KC_HYPR,        KC_NO,          
     KC_LEFT_GUI,    KC_LEFT_ALT,    KC_NO,                          KC_NO,          KC_LEFT_CTRL,   OSM(MOD_RSFT)
   ),
   [1] = LAYOUT_moonlander(
