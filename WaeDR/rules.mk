@@ -4,3 +4,4 @@ CONSOLE_ENABLE = no
 COMMAND_ENABLE = no
 SPACE_CADET_ENABLE = no
 COMBO_ENABLE = yes
+SRC += features/achordion.c
