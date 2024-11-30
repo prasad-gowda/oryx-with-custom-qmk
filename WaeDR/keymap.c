@@ -88,6 +88,10 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
 
 };
 
+void matrix_scan_user(void) {
+  achordion_task();
+}
+
 void set_layer_color(int layer) {
   for (int i = 0; i < RGB_MATRIX_LED_COUNT; i++) {
     HSV hsv = {
