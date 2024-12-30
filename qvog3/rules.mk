@@ -5,3 +5,4 @@ COMMAND_ENABLE = no
 SPACE_CADET_ENABLE = no
 COMBO_ENABLE = yes
 DYNAMIC_TAPPING_TERM_ENABLE = yes
+SRC += features/achordion.c
