@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRANSPARENT, KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_DOT,         KC_MINUS,       KC_UNDS,        KC_EQUAL,       KC_GRAVE,       KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_DQUO,        KC_LPRN,        KC_RPRN,        KC_LCBR,        KC_RCBR,        KC_NO,          
     KC_NO,          KC_COMMA,       KC_EXLM,        KC_ASTR,        KC_SLASH,       KC_BSLS,                                        KC_QUOTE,       KC_COLN,        KC_SCLN,        KC_LBRC,        KC_RBRC,        KC_NO,          
-    KC_TRANSPARENT, TO(0),          KC_NO,          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                                                                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_NO,          KC_NO,          KC_TRANSPARENT, KC_TRANSPARENT, 
+    KC_TRANSPARENT, TO(0),          KC_NO,          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                                                                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_LEFT_SHIFT,  KC_NO,          KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT
   ),
   [2] = LAYOUT_moonlander(
@@ -69,22 +69,20 @@ combo_t key_combos[COMBO_COUNT] = {
 };
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case MT(MOD_LSFT, KC_A):
-            return g_tapping_term -5;
         case MT(MOD_LCTL, KC_R):
-            return g_tapping_term -5;
+            return g_tapping_term -140;
         case MT(MOD_LALT, KC_S):
-            return g_tapping_term -5;
+            return g_tapping_term -140;
         case MT(MOD_LGUI, KC_T):
-            return g_tapping_term -5;
+            return g_tapping_term -140;
         case MT(MOD_RGUI, KC_N):
-            return g_tapping_term -5;
+            return g_tapping_term -140;
         case MT(MOD_RALT, KC_E):
-            return g_tapping_term -5;
+            return g_tapping_term -140;
         case MT(MOD_LCTL, KC_I):
-            return g_tapping_term -5;
+            return g_tapping_term -140;
         case MT(MOD_RSFT, KC_O):
-            return g_tapping_term -5;
+            return g_tapping_term -140;
         default:
             return g_tapping_term;
     }
